@@ -1,4 +1,4 @@
-# ChangeSet: 2025-12-29 Documentation Quality Improvements
+# ChangeSet: 2025-12-30 Documentation Quality Improvements
 ChangeSet 用于对 DocSmith 生成的文档提出批量修改要求。
 
 ## Summary
@@ -14,11 +14,11 @@ ChangeSet 用于对 DocSmith 生成的文档提出批量修改要求。
 ## 1. Global Semantic Changes (全局语义修改)
 
 ### 术语统一
-3. "snap kit" 统一为 "SnapKit"(产品名称大写，合并为一个单词)
+1. "snap kit" 统一为 "SnapKit"(产品名称大写，合并为一个单词)
 
 ### 语言风格
-4. 整体语气从 "产品营销介绍" 改为 "技术文档风格",减少形容词,增加事实性描述
-5. 删除所有 emoji 符号(🎯、🔧、🏗️ 等),改用纯文本标题
+2. 整体语气从 "产品营销介绍" 改为 "技术文档风格",减少形容词,增加事实性描述
+3. 删除所有 emoji 符号(🎯、🔧、🏗️ 等),改用纯文本标题
 
 ---
 
