@@ -37,14 +37,14 @@ function createSnapshotMiddleware(options: {
 #### endpoint (必需)
 
 - **类型**: `string`
-- **说明**: Snap Kit 端点 URL
+- **说明**: SnapKit 端点 URL
 - **示例**: `'https://snap.example.com'`
 
 #### accessKey (必需)
 
 - **类型**: `string`
-- **说明**: Snap Kit 访问密钥
-- **获取方式**: 在 Snap Kit Web 界面中生成
+- **说明**: SnapKit 访问密钥
+- **获取方式**: 在 SnapKit Web 界面中生成
 
 #### cacheMax (可选)
 
@@ -316,7 +316,7 @@ export BLOCKLET_APP_URL="https://your-app.com"
 ### 缓存层级
 
 ```
-请求 → 内存 LRU → SQLite → Snap Kit API
+请求 → 内存 LRU → SQLite → SnapKit API
          ↑         ↑          ↑
        最快      持久化      源数据
 ```
@@ -332,7 +332,7 @@ export BLOCKLET_APP_URL="https://your-app.com"
    ├─ 找到 → 加载到内存 → 返回
    └─ 未找到 → 下一步
 
-3. 异步请求 Snap Kit
+3. 异步请求 SnapKit
    ├─ 成功 → 保存到数据库和内存
    └─ 失败 → 记录失败状态
 ```
@@ -349,7 +349,7 @@ export BLOCKLET_APP_URL="https://your-app.com"
 3. 当前请求返回旧缓存
 
 4. 后台执行更新
-   ├─ 请求 Snap Kit API
+   ├─ 请求 SnapKit API
    ├─ 更新 SQLite
    └─ 更新内存缓存
 
@@ -443,12 +443,12 @@ app.use(middleware, (req, res, next) => {
 ### 缓存一直未命中
 
 **可能原因**:
-1. 页面未被 Snap Kit 爬取
+1. 页面未被 SnapKit 爬取
 2. endpoint 或 accessKey 错误
 3. allowCrawler 返回 false
 
 **解决方法**:
-1. 在 Snap Kit 中手动爬取页面
+1. 在 SnapKit 中手动爬取页面
 2. 检查配置参数
 3. 检查 allowCrawler 逻辑
 

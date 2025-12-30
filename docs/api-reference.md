@@ -1,12 +1,12 @@
 # API 参考
 
-本文档提供 Snap Kit 所有 API 的概览和快速参考。详细的 API 说明请参考各模块的独立文档。
+本文档提供 SnapKit 所有 API 的概览和快速参考。详细的 API 说明请参考各模块的独立文档。
 
 ## API 概览
 
-Snap Kit 提供两类 API：
+SnapKit 提供两类 API：
 
-1. **HTTP REST API** - Snap Kit Blocklet 提供的 Web API
+1. **HTTP REST API** - SnapKit Blocklet 提供的 Web API
 2. **Node.js API** - Crawler Engine 和 SEO Middleware 提供的编程接口
 
 ## HTTP REST API
@@ -19,7 +19,7 @@ Snap Kit 提供两类 API：
 Authorization: Bearer YOUR_ACCESS_KEY
 ```
 
-访问密钥可在 Snap Kit Web 界面中生成和管理。
+访问密钥可在 SnapKit Web 界面中生成和管理。
 
 ### 端点列表
 

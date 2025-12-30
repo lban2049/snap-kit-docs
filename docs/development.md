@@ -1,6 +1,6 @@
 # 开发指南
 
-本文档介绍如何在本地开发、构建、测试和发布 Snap Kit。
+本文档介绍如何在本地开发、构建、测试和发布 SnapKit。
 
 ## 开发环境准备
 
@@ -92,7 +92,7 @@ pnpm dev
 ```
 
 这会同时启动：
-- Snap Kit Blocklet (前端 + API)
+- SnapKit Blocklet (前端 + API)
 - Crawler Engine (开发模式)
 - SEO Middleware (开发模式)
 

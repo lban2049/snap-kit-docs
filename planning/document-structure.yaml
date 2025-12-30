@@ -1,10 +1,10 @@
 project:
-  title: "Snap Kit"
-  description: "基于 Puppeteer 的企业级网页自动化平台，提供网页截图、内容抓取、SEO 预渲染等功能"
+  title: "SnapKit"
+  description: "基于 Puppeteer 的 Web 自动化服务，提供网页截图、内容抓取、SEO 预渲染等功能"
 
 documents:
   - title: "概述"
-    description: "Snap Kit 项目介绍、核心价值、主要功能和技术特点"
+    description: "SnapKit 项目介绍、核心定位、使用场景和核心特性"
     path: "/overview.md"
     sourcePaths:
       - "sources/snap-kit/README.md"
@@ -31,7 +31,7 @@ documents:
     icon: "lucide:layout"
 
   - title: "核心模块"
-    description: "Snap Kit 的三个核心模块详细说明"
+    description: "SnapKit 的三个核心模块详细说明"
     path: "/modules.md"
     sourcePaths:
       - "sources/snap-kit/blocklets/snap-kit/README.md"
@@ -39,7 +39,7 @@ documents:
       - "sources/snap-kit/packages/middleware/README.md"
     icon: "lucide:box"
     children:
-      - title: "Snap Kit Blocklet"
+      - title: "SnapKit Blocklet"
         description: "主应用模块，包含 React 前端和 Express API"
         path: "/modules/blocklet.md"
         sourcePaths:
@@ -101,7 +101,7 @@ documents:
     icon: "lucide:settings"
 
   - title: "应用场景"
-    description: "Snap Kit 的实际应用场景和使用示例"
+    description: "SnapKit 的实际应用场景和使用示例"
     path: "/use-cases.md"
     sourcePaths:
       - "sources/snap-kit/README.md"

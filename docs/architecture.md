@@ -1,10 +1,10 @@
 # 架构说明
 
-本文档详细介绍 Snap Kit 的整体架构、技术栈和项目结构。
+本文档详细介绍 SnapKit 的整体架构、技术栈和项目结构。
 
 ## 架构概览
 
-Snap Kit 采用经典的三层架构设计，将前端展示、API 服务和核心引擎进行解耦。
+SnapKit 采用经典的三层架构设计，将前端展示、API 服务和核心引擎进行解耦。
 
 ```
 ┌─────────────────────┐    ┌─────────────────────┐    ┌─────────────────────┐
@@ -64,7 +64,7 @@ Snap Kit 采用经典的三层架构设计，将前端展示、API 服务和核�
 
 ## 项目结构
 
-Snap Kit 采用 Monorepo 架构，使用 pnpm workspace 管理多个包：
+SnapKit 采用 Monorepo 架构，使用 pnpm workspace 管理多个包：
 
 ```
 snap-kit/
@@ -168,7 +168,7 @@ SEO 中间件包，提供：
 
 ## 队列系统
 
-Snap Kit 使用 `@abtnode/queue` 实现任务队列管理，支持：
+SnapKit 使用 `@abtnode/queue` 实现任务队列管理，支持：
 
 - **并发控制**: 限制同时执行的任务数量
 - **任务调度**: 根据优先级调度任务
@@ -186,7 +186,7 @@ Snap Kit 使用 `@abtnode/queue` 实现任务队列管理，支持：
 
 ### SQLite 数据库
 
-Snap Kit 使用 SQLite 作为主要数据存储，包含以下表：
+SnapKit 使用 SQLite 作为主要数据存储，包含以下表：
 
 1. **jobs**: 存储任务信息
 2. **snapshots**: 存储爬取结果
@@ -207,7 +207,7 @@ Snap Kit 使用 SQLite 作为主要数据存储，包含以下表：
 │   Docker Container               │
 │                                  │
 │  ┌────────────────────────────┐  │
-│  │   Snap Kit Application     │  │
+│  │   SnapKit Application     │  │
 │  │   + Chromium               │  │
 │  └────────────────────────────┘  │
 │                                  │
@@ -224,7 +224,7 @@ Snap Kit 使用 SQLite 作为主要数据存储，包含以下表：
 │   Blocklet Server                  │
 │                                    │
 │  ┌──────────────────────────────┐  │
-│  │   Snap Kit Blocklet          │  │
+│  │   SnapKit Blocklet          │  │
 │  │   • Frontend                 │  │
 │  │   • API                      │  │
 │  │   • Crawler Engine           │  │
@@ -237,25 +237,6 @@ Snap Kit 使用 SQLite 作为主要数据存储，包含以下表：
 ```
 
 ## 扩展性
-
-::: PATCH
-# Delete
-### 水平扩展
-
-通过部署多个 Snap Kit 实例，配合负载均衡器实现水平扩展：
-
-```
-                ┌─────────────┐
-                │Load Balancer│
-                └──────┬──────┘
-                       │
-        ┌──────────────┼──────────────┐
-        ▼              ▼              ▼
-  ┌─────────┐    ┌─────────┐    ┌─────────┐
-  │Instance1│    │Instance2│    │Instance3│
-  └─────────┘    └─────────┘    └─────────┘
-```
-:::
 
 ### 性能优化
 

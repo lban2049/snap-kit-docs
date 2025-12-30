@@ -1,6 +1,6 @@
 # 应用场景
 
-本文档介绍 Snap Kit 的实际应用场景和使用示例，帮助您了解如何在不同场景中使用 Snap Kit。
+本文档介绍 SnapKit 的实际应用场景和使用示例，帮助您了解如何在不同场景中使用 SnapKit。
 
 ## 场景 1: 网站监控
 
@@ -66,9 +66,9 @@ if (snapshot) {
 
 ### 解决方案
 
-部署 Snap Kit 和 SEO Middleware：
+部署 SnapKit 和 SEO Middleware：
 
-**1. 部署 Snap Kit**:
+**1. 部署 SnapKit**:
 ```bash
 docker run -p 3000:3000 arcblock/snap-kit
 ```
@@ -98,7 +98,7 @@ app.get('*', (req, res) => {
 
 **3. 预爬取重要页面**:
 ```typescript
-// 在 Snap Kit 中配置定时任务
+// 在 SnapKit 中配置定时任务
 siteCron: {
   enabled: true,
   sites: [{
@@ -458,7 +458,7 @@ const docs = await generateAPIDocs([
 
 ### 1. 尊重 robots.txt
 
-默认情况下 Snap Kit 会检查 robots.txt：
+默认情况下 SnapKit 会检查 robots.txt：
 
 ```typescript
 await crawlUrl({

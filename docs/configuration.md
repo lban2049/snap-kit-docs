@@ -1,6 +1,6 @@
 # 配置说明
 
-本文档详细说明 Snap Kit 的环境变量配置、定时任务配置和数据库配置。
+本文档详细说明 SnapKit 的环境变量配置、定时任务配置和数据库配置。
 
 ## 环境变量
 
@@ -329,7 +329,7 @@ await initCrawler({
 
 ### SQLite 配置
 
-Snap Kit 使用 SQLite 作为默认数据库，自动在 `BLOCKLET_DATA_DIR` 创建。
+SnapKit 使用 SQLite 作为默认数据库，自动在 `BLOCKLET_DATA_DIR` 创建。
 
 #### 数据库文件
 

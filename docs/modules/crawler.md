@@ -7,7 +7,7 @@
 
 ## 概述
 
-Crawler Engine (`@arcblock/crawler`) 是 Snap Kit 的核心自动化引擎,基于 Puppeteer 构建。它负责实际的网页访问、截图生成、内容提取和数据存储。
+Crawler Engine (`@arcblock/crawler`) 是 SnapKit 的核心自动化引擎,基于 Puppeteer 构建。它负责实际的网页访问、截图生成、内容提取和数据存储。
 
 ## 包信息
 

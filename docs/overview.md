@@ -1,29 +1,24 @@
-# Snap Kit 概述
+# SnapKit 概述
 
-Snap Kit 是一个基于 Puppeteer 的企业级网页自动化平台，为开发者提供强大的网页截图、内容抓取和 SEO 优化能力。它构建在 Blocklet 生态系统之上，提供生产级的可靠性和开发者友好的 API。
+SnapKit 是基于 Puppeteer 构建的 Web 自动化服务，提供 RESTful API 接口用于网页截图、内容抓取和预渲染。
 
 ![Snap Kit Logo](../sources/snap-kit/blocklets/snap-kit/logo.png)
 
-## 为什么选择 Snap Kit？
+## 使用场景
 
-Snap Kit 将网页抓取、截图生成和 SEO 优化提升到全新的水平，为生产环境提供企业级的可靠性和性能。
+SnapKit 主要应用于以下技术场景：
 
-### 核心优势
+- **自动化测试** - 在自动化测试流程中生成页面截图，用于视觉回归测试
+- **内容聚合平台** - 从目标网站采集结构化数据，用于内容聚合和商业智能分析
+- **SPA 应用的 SEO 优化** - 为单页应用生成预渲染的静态 HTML，便于搜索引擎爬取和索引
 
-::: PATCH
-# Original
-- **零配置部署** - 通过 Docker 或 Blocklet Server 实现即时部署
-- **生产级规模** - 内置队列系统，支持处理数千个并发请求
+## 核心特性
 
-# Revised
 - **一键部署** - 支持 Docker、Kubernetes 和 Blocklet Server 的零配置快速部署
 - **企业级性能** - 智能队列系统，轻松处理上万个并发请求
 - **高可用架构** - 内置健康检查和故障恢复机制
-:::
-
-- **SEO 强化** - 为单页应用（SPA）提供预渲染，实现完美的搜索引擎索引
-- **卓越的开发体验** - 现代化的 TypeScript API 和全面的文档
-- **成本效益** - 自托管解决方案，无需按请求付费
+- **RESTful API** - 现代化的 TypeScript API，完整的文档和类型定义
+- **自托管方案** - 无需按请求付费，完全掌控数据和服务
 
 ## 主要功能
 
@@ -46,49 +41,13 @@ Snap Kit 将网页抓取、截图生成和 SEO 优化提升到全新的水平，
 
 ## 项目组成
 
-Snap Kit 包含三个核心模块，每个模块都是生产就绪的：
+SnapKit 包含三个核心模块：
 
-### 1. Snap Kit Blocklet
+- **SnapKit Blocklet** - 主应用程序，包含 React 前端界面和 Express API 服务
+- **Crawler Engine** - 基于 Puppeteer 的爬虫引擎，负责网页访问、截图和数据提取
+- **SEO Middleware** - Express 中间件，为 SPA 应用提供预渲染支持
 
-主应用程序，包含：
-- React 前端：用于管理爬取任务的现代化 UI
-- Express API：用于自动化的 RESTful 端点
-- DID 认证：安全的访问控制
-- 实时仪表板：监控爬取进度
-
-### 2. Crawler Engine
-
-核心自动化引擎，提供：
-- Puppeteer 集成：最新的 Chrome 自动化
-- 数据库管理：带迁移的 SQLite
-- 队列系统：高效的批量处理
-- 定时任务：自动化的爬取工作流
-
-### 3. SEO Middleware
-
-Express 中间件，用于：
-- 预渲染：为 SPA 生成静态 HTML
-- 缓存管理：智能缓存策略
-- 搜索引擎优化：为动态内容提供完美的 SEO
-
-## 应用场景
-
-Snap Kit 可以应用于多种实际场景：
-
-### 网站监控
-自动监控竞争对手网站并跟踪变化。
-
-### SEO 优化
-为 SPA 预渲染页面，实现完美的搜索引擎索引。
-
-### 数据分析
-从网站提取结构化数据用于商业智能。
-
-### 视觉测试
-生成截图用于视觉回归测试。
-
-### 社交媒体
-自动生成社交媒体预览图。
+详细信息请参考[核心模块](modules.md)文档。
 
 ## 技术栈
 
@@ -100,15 +59,15 @@ Snap Kit 可以应用于多种实际场景：
 
 ## 许可证
 
-Snap Kit 采用 MIT 许可证，可自由用于商业和个人项目。
+SnapKit 采用 MIT 许可证，可自由用于商业和个人项目。
 
 ## 相关主题
 
-- [快速开始](getting-started.md) - 了解如何安装和部署 Snap Kit
+- [快速开始](getting-started.md) - 了解如何安装和部署 SnapKit
 - [架构说明](architecture.md) - 深入了解项目架构和技术栈
 - [核心模块](modules.md) - 探索三个核心模块的详细功能
 - [API 参考](api-reference.md) - 查看完整的 API 文档
 
 ## 下一步
 
-准备好开始使用 Snap Kit 了吗？查看[快速开始](getting-started.md)指南，了解如何在几分钟内启动和运行 Snap Kit。
+准备好开始使用 SnapKit 了吗？查看[快速开始](getting-started.md)指南，了解如何在几分钟内启动和运行 SnapKit。

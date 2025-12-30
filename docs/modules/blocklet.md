@@ -1,4 +1,4 @@
-# Snap Kit Blocklet
+# SnapKit Blocklet
 
 ## 前置条件
 
@@ -7,7 +7,7 @@
 
 ## 概述
 
-Snap Kit Blocklet 是主应用程序，提供完整的 Web 界面和 RESTful API 服务。它整合了 Crawler Engine 和前端界面，为用户提供一站式的网页自动化解决方案。
+SnapKit Blocklet 是主应用程序，提供完整的 Web 界面和 RESTful API 服务。它整合了 Crawler Engine 和前端界面，为用户提供一站式的网页自动化解决方案。
 
 ## 项目信息
 
@@ -258,7 +258,7 @@ npm run bump-version
 主要配置项：
 
 ```yaml
-title: Snap Kit
+title: SnapKit
 version: 1.5.1
 group: dapp
 interfaces:
