@@ -1,0 +1,12 @@
+970866f0d7cc126c3f316f3f5fc64593bef2485c5c8af2efae92bc221036f409:
+  local_path: sources/snap-kit/blocklets/snap-kit/logo.png
+  sites:
+    https://staging.docsmith.aigne.io:
+      url: https://staging.docsmith.aigne.io/image-bin/uploads/970866f0d7cc126c.png
+      upload_time: 2025-12-30T08:00:45.395Z
+a5aad61216b73dd11c51ae2638ee1b0db241bb5dd8cae8ecd4f1a86bc6e8d1d5:
+  local_path: sources/snap-kit/blocklets/snap-kit/screenshots/1.jpeg
+  sites:
+    https://staging.docsmith.aigne.io:
+      url: https://staging.docsmith.aigne.io/image-bin/uploads/a5aad61216b73dd1.jpeg
+      upload_time: 2025-12-30T08:00:46.210Z

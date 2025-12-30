@@ -3,7 +3,7 @@ workspaceVersion: "1.0"
 createdAt: "2025-12-30T07:37:00Z"
 
 # Project information
-projectName: "snap-kit"
+projectName: "snap-kit-workspace"
 projectDesc: ""
 locale: "zh"
 
@@ -17,3 +17,10 @@ source:
 # Documentation settings (for publish)
 projectLogo: ""
 translateLanguages: []
+
+appUrl: https://staging.docsmith.aigne.io
+boardId: snap-kit-workspace
+# Checkout ID for document deployment service
+checkoutId: ""
+# Should sync branding for documentation
+shouldSyncBranding: ""
