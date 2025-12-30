@@ -1,0 +1,116 @@
+project:
+  title: "Snap Kit"
+  description: "基于 Puppeteer 的企业级网页自动化平台，提供网页截图、内容抓取、SEO 预渲染等功能"
+
+documents:
+  - title: "概述"
+    description: "Snap Kit 项目介绍、核心价值、主要功能和技术特点"
+    path: "/overview.md"
+    sourcePaths:
+      - "sources/snap-kit/README.md"
+      - "sources/snap-kit/package.json"
+      - "sources/snap-kit/blocklets/snap-kit/blocklet.yml"
+    icon: "lucide:home"
+
+  - title: "快速开始"
+    description: "安装配置、本地开发、Docker 部署和 Blocklet Server 部署的完整指南"
+    path: "/getting-started.md"
+    sourcePaths:
+      - "sources/snap-kit/README.md"
+      - "sources/snap-kit/package.json"
+      - "sources/snap-kit/blocklets/snap-kit/dockerfile"
+    icon: "lucide:rocket"
+
+  - title: "架构说明"
+    description: "项目整体架构、技术栈、目录结构和核心模块介绍"
+    path: "/architecture.md"
+    sourcePaths:
+      - "sources/snap-kit/README.md"
+      - "sources/snap-kit/package.json"
+      - "sources/snap-kit/pnpm-workspace.yaml"
+    icon: "lucide:layout"
+
+  - title: "核心模块"
+    description: "Snap Kit 的三个核心模块详细说明"
+    path: "/modules.md"
+    sourcePaths:
+      - "sources/snap-kit/blocklets/snap-kit/README.md"
+      - "sources/snap-kit/packages/crawler/README.md"
+      - "sources/snap-kit/packages/middleware/README.md"
+    icon: "lucide:box"
+    children:
+      - title: "Snap Kit Blocklet"
+        description: "主应用模块，包含 React 前端和 Express API"
+        path: "/modules/blocklet.md"
+        sourcePaths:
+          - "sources/snap-kit/blocklets/snap-kit/README.md"
+          - "sources/snap-kit/blocklets/snap-kit/package.json"
+          - "sources/snap-kit/blocklets/snap-kit/blocklet.yml"
+
+      - title: "Crawler Engine"
+        description: "核心爬虫引擎，提供网页爬取、截图和数据存储功能"
+        path: "/modules/crawler.md"
+        sourcePaths:
+          - "sources/snap-kit/packages/crawler/README.md"
+          - "sources/snap-kit/packages/crawler/package.json"
+          - "sources/snap-kit/packages/crawler/src/index.ts"
+          - "sources/snap-kit/packages/crawler/src/crawler.ts"
+          - "sources/snap-kit/packages/crawler/src/puppeteer.ts"
+
+      - title: "SEO Middleware"
+        description: "Express 中间件，为 SPA 应用提供 SEO 预渲染支持"
+        path: "/modules/middleware.md"
+        sourcePaths:
+          - "sources/snap-kit/packages/middleware/README.md"
+          - "sources/snap-kit/packages/middleware/package.json"
+          - "sources/snap-kit/packages/middleware/src/index.ts"
+          - "sources/snap-kit/packages/middleware/src/cache.ts"
+
+  - title: "API 参考"
+    description: "核心模块的 API 接口说明、参数配置和示例代码"
+    path: "/api-reference.md"
+    sourcePaths:
+      - "sources/snap-kit/packages/crawler/src/index.ts"
+      - "sources/snap-kit/packages/crawler/src/crawler.ts"
+      - "sources/snap-kit/packages/middleware/src/index.ts"
+    icon: "lucide:code"
+    children:
+      - title: "Crawler API"
+        description: "爬虫引擎的主要 API 接口和使用方法"
+        path: "/api-reference/crawler.md"
+        sourcePaths:
+          - "sources/snap-kit/packages/crawler/README.md"
+          - "sources/snap-kit/packages/crawler/src/index.ts"
+          - "sources/snap-kit/packages/crawler/src/crawler.ts"
+
+      - title: "Middleware API"
+        description: "SEO 中间件的配置选项和使用方法"
+        path: "/api-reference/middleware.md"
+        sourcePaths:
+          - "sources/snap-kit/packages/middleware/README.md"
+          - "sources/snap-kit/packages/middleware/src/index.ts"
+
+  - title: "配置说明"
+    description: "环境变量配置、定时任务配置和数据库配置说明"
+    path: "/configuration.md"
+    sourcePaths:
+      - "sources/snap-kit/packages/crawler/README.md"
+      - "sources/snap-kit/packages/middleware/README.md"
+      - "sources/snap-kit/packages/crawler/src/config.ts"
+      - "sources/snap-kit/packages/crawler/src/cron.ts"
+    icon: "lucide:settings"
+
+  - title: "应用场景"
+    description: "Snap Kit 的实际应用场景和使用示例"
+    path: "/use-cases.md"
+    sourcePaths:
+      - "sources/snap-kit/README.md"
+    icon: "lucide:lightbulb"
+
+  - title: "开发指南"
+    description: "本地开发、构建、测试和发布的完整流程"
+    path: "/development.md"
+    sourcePaths:
+      - "sources/snap-kit/README.md"
+      - "sources/snap-kit/package.json"
+    icon: "lucide:wrench"
