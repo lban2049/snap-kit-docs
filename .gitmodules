@@ -1,0 +1,3 @@
+[submodule "sources/snap-kit"]
+	path = sources/snap-kit
+	url = https://github.com/blocklet/snap-kit.git

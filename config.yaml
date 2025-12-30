@@ -1,0 +1,19 @@
+# Workspace metadata
+workspaceVersion: "1.0"
+createdAt: "2025-12-30T07:37:00Z"
+
+# Project information
+projectName: "snap-kit"
+projectDesc: ""
+locale: "zh"
+
+# Source repository (as git submodule)
+source:
+  type: "git-submodule"
+  path: "sources/snap-kit"
+  url: "https://github.com/blocklet/snap-kit.git"
+  branch: "main"
+
+# Documentation settings (for publish)
+projectLogo: ""
+translateLanguages: []

@@ -1,0 +1,4 @@
+# Workspace gitignore
+cache/
+.tmp/
+node_modules/
